@@ -51,37 +51,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
-    <Compile Include="DTO\Account.cs" />
-    <Compile Include="fAccountProfile.cs">
+    <Compile Include="DAO\NCCDAO.cs" />
+    <Compile Include="DTO\NCC.cs" />
+    <Compile Include="fNCC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAccountProfile.Designer.cs">
-      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    <Compile Include="fNCC.Designer.cs">
+      <DependentUpon>fNCC.cs</DependentUpon>
     </Compile>
-    <Compile Include="fAdmin.cs">
+    <Compile Include="fTableManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAdmin.Designer.cs">
-      <DependentUpon>fAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fLogin.Designer.cs">
-      <DependentUpon>fLogin.cs</DependentUpon>
+    <Compile Include="fTableManager.Designer.cs">
+      <DependentUpon>fTableManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fAccountProfile.resx">
-      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    <Compile Include="QuanLyKhoHangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fNCC.resx">
+      <DependentUpon>fNCC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fAdmin.resx">
-      <DependentUpon>fAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fLogin.resx">
-      <DependentUpon>fLogin.cs</DependentUpon>
+    <EmbeddedResource Include="fTableManager.resx">
+      <DependentUpon>fTableManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -103,6 +99,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuanLyKhoHangDataSet.xsc">
+      <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhoHangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhoHangDataSet.xss">
+      <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
