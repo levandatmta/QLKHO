@@ -1,4 +1,4 @@
-CREATE DATABASE QuanLyKhoHang
+﻿CREATE DATABASE QuanLyKhoHang
 GO
 USE QuanLyKhoHang
 GO
@@ -168,6 +168,8 @@ INSERT INTO NCC (Idncc, Tenncc, Diachi, Sdt)
 VALUES ('004','Oppo','Ha Noi','1234922723')
 INSERT INTO NCC (Idncc, Tenncc, Diachi, Sdt)
 VALUES ('005','Apple','Ha Noi','1234922723')
+INSERT INTO NCC (Idncc, Tenncc, Diachi, Sdt)
+VALUES ('006','Apple','Campuchia','1234922723')
 GO
 -- Nhập data Bảng Phiếu Xuất
 INSERT INTO PhieuXuat (Idphieux, Idhang, Tenhang, Dvt, Luongxuat, Giaxuat, ThanhTien)
