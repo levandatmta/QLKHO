@@ -27,24 +27,8 @@ namespace QuanLyKhoHang
             if (pq == 1) adminToolStripMenuItem.Enabled = true;
             else adminToolStripMenuItem.Enabled = false;
         }
-     #region Events
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
-        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fAccountProfile f = new fAccountProfile(name,id,pass);
-            f.ShowDialog();
-        }
-
-        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fAdmin f = new fAdmin();
-            f.ShowDialog();
-        }
 
         private void hàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
