@@ -9,6 +9,22 @@ namespace QuanLyKhoHang.DTO
 {
     public class NCC
     {
+        public NCC(string Idncc, string Tenncc, string Diachi, string Sdt)
+        {
+            this.idncc = Idncc;
+            this.tenncc = Tenncc;
+            this.diachi = Diachi;
+            this.sdt = Sdt;
+        }
+
+        public NCC(DataRow row)
+        {
+            this.idncc = row["Idncc"].ToString();
+            this.tenncc = row["Tenncc"].ToString();
+            this.diachi = row["Diachi"].ToString();
+            this.sdt = row["Sdt"].ToString();
+        
+        }
 
 
         private string Idncc;
