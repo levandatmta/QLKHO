@@ -28,7 +28,11 @@ namespace QuanLyKhoHang
 
         #region Method
 
-
+        List<NCC> SearchNccByName(string Tenncc)
+        {
+            List<NCC> ncc = NCCDAO.Instance.SearchNccByName(Tenncc);
+            return ncc;
+        }
 
         void AddNCCBinding()
         {

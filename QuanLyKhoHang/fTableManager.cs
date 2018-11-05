@@ -29,6 +29,16 @@ namespace QuanLyKhoHang
         }
      #region Events
 
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fAccountProfile f = new fAccountProfile(name,id,pass);
+            f.ShowDialog();
+        }
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
