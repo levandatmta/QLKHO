@@ -53,7 +53,62 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
-
+    <Compile Include="DAO\HanghoaDAO.cs" />
+    <Compile Include="DAO\NCCDAO.cs" />
+    <Compile Include="DAO\NhaphangDAO.cs" />
+    <Compile Include="DAO\XuathangDAO.cs" />
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Hanghoa.cs" />
+    <Compile Include="DTO\NCC.cs" />
+    <Compile Include="DTO\Nhaphang.cs" />
+    <Compile Include="DTO\Xuathang.cs" />
+    <Compile Include="fAccountProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAccountProfile.Designer.cs">
+      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAdmin.Designer.cs">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGioiThieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGioiThieu.Designer.cs">
+      <DependentUpon>fGioiThieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHanghoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHanghoa.Designer.cs">
+      <DependentUpon>fHanghoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNCC.Designer.cs">
+      <DependentUpon>fNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fXuatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fXuatHang.Designer.cs">
+      <DependentUpon>fXuatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhapHang.Designer.cs">
+      <DependentUpon>fNhapHang.cs</DependentUpon>
     </Compile>
     <Compile Include="fTableManager.cs">
       <SubType>Form</SubType>
@@ -68,7 +123,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
     </Compile>
-
+    <EmbeddedResource Include="fAccountProfile.resx">
+      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAdmin.resx">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGioiThieu.resx">
+      <DependentUpon>fGioiThieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHanghoa.resx">
+      <DependentUpon>fHanghoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNCC.resx">
+      <DependentUpon>fNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fXuatHang.resx">
+      <DependentUpon>fXuatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhapHang.resx">
+      <DependentUpon>fNhapHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fTableManager.resx">
       <DependentUpon>fTableManager.cs</DependentUpon>
@@ -122,9 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\index.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
